@@ -3,6 +3,7 @@ Decadal Changes in the Urban Areas in Surat, Gujrat from 2000 to 2020.
 
 
 INTRODUCTION:
+
 The project demonstrates the decade-wise expansion of urban areas in Surat municipal division of Gujrat. The entire process, starting from acquiring images to carrying out classification, detecting changes, visualizing using spectral indices and creating a dashboard, has been implemented on Google Earth Engine.
 
 
@@ -25,6 +26,7 @@ METHODOLOGY:
 
 
 SCALABILITY OF THE PROJECT:
+
 1.The boundary can be modified as required for another area of interests.
 
 2.One can choose a different image collection within Landsat or another satellite image collection, adjusting the scale accordingly.
