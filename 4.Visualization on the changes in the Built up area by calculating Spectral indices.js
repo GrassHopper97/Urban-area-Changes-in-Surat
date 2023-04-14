@@ -66,7 +66,8 @@ var binary_00 = savi_2000.gt(thr_1).rename('binary_SAVI');
 var  surt_savi_2000 = binary_00.clip(ROI);
 Map.addLayer(surt_savi_2000, { min:0,max:1,palette:['green','blue']},'SAVI_B_2000')
 
-//IBI Calculation
+//IBI Calculation(Indices based Index)
+//IBI = (NDBI-(SAVI+MNDWI)/2)/(NDBI+(SAVI+MNDWI)/2)
 var ibi = surt_ndbi_2000.subtract((surt_savi_2000.add(surt_mndwi_2000)).divide(2)).divide(surt_ndbi_2000.add((surt_savi_2000.add(surt_mndwi_2000)).divide(2))).rename('ibi');
 var ibi_surat_2000 = ibi.clip(ROI);
 Map.addLayer(ibi_surat_2000, {min: 0, max:1, palette: ['white', 'red']}, 'IBI_2000');
@@ -132,6 +133,7 @@ var  surt_savi_2010 = binary_001.clip(ROI);
 Map.addLayer(surt_savi_2010, { min:0,max:1,palette:['green','blue']},'SAVI_B_2010')
 
 //IBI
+//IBI = (NDBI-(SAVI+MNDWI)/2)/(NDBI+(SAVI+MNDWI)/2)
 var ibi_1 = surt_ndbi_2010.subtract((surt_savi_2010.add(surt_mndwi_2010)).divide(2)).divide(surt_ndbi_2010.add((surt_savi_2010.add(surt_mndwi_2010)).divide(2))).rename('ibi_1');
 var ibi_surat_2010 = ibi.clip(ROI);
 Map.addLayer(ibi_surat_2010, {min: 0, max:1, palette: ['white', 'red']}, 'IBI_2010');
@@ -200,8 +202,8 @@ var savi_2020 = dry.expression (
  var thr_1 = 0.3
  var binary_002 = savi_2020.gt(thr_1).rename('binary_SAVI');
 Map.addLayer(binary_002, { min:0,max:1,palette:['green','blue']},'SAVI_B_2020')
-//Calculation of IBI
-//IBI = ()
+//Calculation of IBI(Indices based Index)
+//IBI = (NDBI-(SAVI+MNDWI)/2)/(NDBI+(SAVI+MNDWI)/2)
 var ibi_2020 = binary_1.subtract((binary_002.add(binary_010)).divide(2)).divide(binary_1.add((binary_002.add(binary_010)).divide(2))).rename('ibi_1');
 Map.addLayer(ibi_2020, {min: 0, max:1, palette: ['white', 'red']}, 'IBI_2020');
 
