@@ -2,12 +2,12 @@
 Decadal Changes in the Urban Areas in Surat, Gujrat from 2000 to 2020.
 
 
-INTRODUCTION:
+### INTRODUCTION:
 
 The project demonstrates the decade-wise expansion of urban areas in Surat municipal division of Gujrat. The entire process, starting from acquiring images to carrying out classification, detecting changes, visualizing using spectral indices and creating a dashboard, has been implemented on Google Earth Engine.
 
 
-METHODOLOGY:
+### METHODOLOGY:
 
 1.To analyze the land use and land cover classification of the study area, Landsat 7 and Landsat 8 datasets were utilized. The study period spans from 2000 to 2020, and three decades within this timeframe were observed for LULC in the years 2000, 2010, and 2020. For 2000 and 2010, the Tier-1, Level-2 Landsat 7 dataset was used, while for 2020, the Tier-1, Level-2 Landsat 8 dataset was used. The initial step involved atmospheric correction of the dataset, followed by applying a scaling factor to the image collection.
 
@@ -25,7 +25,7 @@ METHODOLOGY:
 
 
 
-SCALABILITY OF THE PROJECT:
+### SCALABILITY OF THE PROJECT:
 
 1.The boundary can be modified as required for another area of interests.
 
